@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6d2bea83-1ed2-4d10-8cd8-be205d1a591a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/calorietracker-jdbctemplate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/calorietracker-jdbctemplate.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/calorietracker/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/calorietracker/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/calorietracker/data/DataAccessException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/calorietracker/data/LogEntryFileRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/calorietracker/data/LogEntryJdbcTemplateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/calorietracker/data/LogEntryJdbcTemplateRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/calorietracker/data/LogEntryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/calorietracker/data/LogEntryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/calorietracker/domain/LogEntryResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/calorietracker/domain/LogEntryResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/calorietracker/domain/LogEntryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/calorietracker/domain/LogEntryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/calorietracker/models/LogEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/calorietracker/models/LogEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/calorietracker/ui/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/calorietracker/ui/View.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/learn/calorietracker/data/DbTestConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/learn/calorietracker/data/LogEntryFileRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/learn/calorietracker/data/LogEntryJdbcTemplateRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/learn/calorietracker/data/LogEntryJdbcTemplateRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/learn/calorietracker/data/doubles/LogEntryRepositoryDouble.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/learn/calorietracker/domain/LogEntryServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/learn/calorietracker/domain/LogEntryServiceTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1na1iwWHB5zrfnsLdKOVfBIkJfp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="JUnit.learn.calorietracker in calorietracker-jdbctemplate">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="learn.calorietracker.App" />
+      <module name="calorietracker-jdbctemplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learn.calorietracker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogEntryJdbcTemplateRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="calorietracker-jdbctemplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learn.calorietracker.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="learn.calorietracker.data" />
+      <option name="MAIN_CLASS_NAME" value="learn.calorietracker.data.LogEntryJdbcTemplateRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogEntryServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="calorietracker-jdbctemplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learn.calorietracker.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="learn.calorietracker.domain" />
+      <option name="MAIN_CLASS_NAME" value="learn.calorietracker.domain.LogEntryServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogEntryServiceTest.shouldNotDeleteNegativeId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="calorietracker-jdbctemplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learn.calorietracker.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="learn.calorietracker.domain" />
+      <option name="MAIN_CLASS_NAME" value="learn.calorietracker.domain.LogEntryServiceTest" />
+      <option name="METHOD_NAME" value="shouldNotDeleteNegativeId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="learn.calorietracker in calorietracker-jdbctemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="calorietracker-jdbctemplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learn.calorietracker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="learn.calorietracker" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.learn.calorietracker in calorietracker-jdbctemplate" />
+        <item itemvalue="JUnit.LogEntryJdbcTemplateRepositoryTest" />
+        <item itemvalue="JUnit.LogEntryServiceTest" />
+        <item itemvalue="JUnit.LogEntryServiceTest.shouldNotDeleteNegativeId" />
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6d2bea83-1ed2-4d10-8cd8-be205d1a591a" name="Default Changelist" comment="" />
+      <created>1611613518206</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611613518206</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/calorietracker_jdbctemplate$LogEntryJdbcTemplateRepositoryTest.ic" NAME="LogEntryJdbcTemplateRepositoryTest Coverage Results" MODIFIED="1611865710602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>learn.calorietracker.data.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/calorietracker_jdbctemplate$learn_calorietracker_in_calorietracker_jdbctemplate.ic" NAME="learn.calorietracker in calorietracker-jdbctemplate Coverage Results" MODIFIED="1611865782022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>learn.calorietracker.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/calorietracker_jdbctemplate$LogEntryServiceTest.ic" NAME="LogEntryServiceTest Coverage Results" MODIFIED="1611864928970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>learn.calorietracker.domain.*</FILTER>
+    </SUITE>
+  </component>
+</project>

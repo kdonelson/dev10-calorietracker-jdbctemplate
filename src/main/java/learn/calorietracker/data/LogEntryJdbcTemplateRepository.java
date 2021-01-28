@@ -2,6 +2,7 @@ package learn.calorietracker.data;
 
 import learn.calorietracker.models.LogEntry;
 import learn.calorietracker.models.LogEntryType;
+import org.springframework.context.annotation.Primary;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -13,6 +14,7 @@ import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.util.List;
 
+@Primary
 @Repository
 public class LogEntryJdbcTemplateRepository implements LogEntryRepository {
 
@@ -23,18 +25,19 @@ public class LogEntryJdbcTemplateRepository implements LogEntryRepository {
     }
 
     @Override
-    public List<LogEntry> findAll() throws DataAccessException {
+    public List<LogEntry> findAll() {
         final String sql = "select log_entry_id, logged_on, log_entry_type_id, description, calories from log_entry;";
         return template.query(sql, mapper);
     }
 
     @Override
-    public List<LogEntry> findByType(LogEntryType type) throws DataAccessException {
-        return null;
+    public List<LogEntry> findByType(LogEntryType type) {
+        final String sql = "select log_entry_id, logged_on, log_entry_type_id, description, calories from log_entry where log_entry_type_id = ?;";
+        return template.query(sql, mapper, type.getValue());
     }
 
     @Override
-    public LogEntry findById(int id) throws DataAccessException {
+    public LogEntry findById(int id) {
         final String sql = "select log_entry_id, logged_on, log_entry_type_id, description, calories from log_entry where log_entry_id = ?;";
         try {
             return template.queryForObject(sql, mapper, id);
@@ -44,7 +47,7 @@ public class LogEntryJdbcTemplateRepository implements LogEntryRepository {
     }
 
     @Override
-    public LogEntry create(LogEntry entry) throws DataAccessException {
+    public LogEntry create(LogEntry entry) {
         final String sql = "insert into log_entry(logged_on, log_entry_type_id, description, calories) values (?, ?, ?, ?);";
 
         KeyHolder keyHolder = new GeneratedKeyHolder();
@@ -63,6 +66,18 @@ public class LogEntryJdbcTemplateRepository implements LogEntryRepository {
 
         entry.setId(keyHolder.getKey().intValue());
         return entry;
+    }
+
+    @Override
+    public boolean update(LogEntry entry) {
+        final String sql = "update log_entry set logged_on = ?, log_entry_type_id = ?, description = ?, calories = ? where log_entry_id = ?;";
+        return template.update(sql, entry.getLoggedOn(), entry.getType().getValue(), entry.getDescription(), entry.getCalories(), entry.getId()) > 0;
+    }
+
+    @Override
+    public boolean delete(int id) {
+        final String sql = "delete from log_entry where log_entry_id = ?;";
+        return template.update(sql, id) > 0;
     }
 
     private final RowMapper<LogEntry> mapper = ((resultSet, rowNum) -> {
