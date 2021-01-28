@@ -6,11 +6,15 @@ import learn.calorietracker.models.LogEntryType;
 import java.util.List;
 
 public interface LogEntryRepository {
-    List<LogEntry> findAll() throws DataAccessException;
+    List<LogEntry> findAll();
 
-    List<LogEntry> findByType(LogEntryType type) throws DataAccessException;
+    List<LogEntry> findByType(LogEntryType type);
 
-    LogEntry findById(int id) throws DataAccessException;
+    LogEntry findById(int id);
 
-    LogEntry create(LogEntry entry) throws DataAccessException;
+    LogEntry create(LogEntry entry);
+
+    boolean update(LogEntry entry);
+
+    boolean delete(int id);
 }

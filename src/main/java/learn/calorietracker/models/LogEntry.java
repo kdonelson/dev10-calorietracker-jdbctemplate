@@ -10,14 +10,6 @@ public class LogEntry {
     public LogEntry() {
     }
 
-    public LogEntry(int id, String loggedOn, LogEntryType type, String description, int calories) {
-        this.id = id;
-        this.loggedOn = loggedOn;
-        this.type = type;
-        this.description = description;
-        this.calories = calories;
-    }
-
     public int getId() {
         return id;
     }
@@ -56,16 +48,5 @@ public class LogEntry {
 
     public void setCalories(int calories) {
         this.calories = calories;
-    }
-
-    @Override
-    public String toString() {
-        return "LogEntry{" +
-                "id=" + id +
-                ", loggedOn='" + loggedOn + '\'' +
-                ", type=" + type +
-                ", description='" + description + '\'' +
-                ", calories=" + calories +
-                '}';
     }
 }

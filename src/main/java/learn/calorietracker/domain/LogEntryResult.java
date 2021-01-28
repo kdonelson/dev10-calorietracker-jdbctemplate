@@ -6,7 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LogEntryResult {
-    // TODO implement this class
+    public LogEntryResult() {
+        messages = new ArrayList<>();
+    }
+    private List<String> messages;
 
     private LogEntry payload;
 
@@ -19,10 +22,14 @@ public class LogEntryResult {
     }
 
     public boolean isSuccessful() {
-        return true;
+        return messages.isEmpty();
     }
 
     public List<String> getMessages() {
-        return new ArrayList<>(List.of("Same error message", "Another same error message"));
+        return new ArrayList<>(messages);
+    }
+
+    public void addMessage(String message) {
+        messages.add(message);
     }
 }

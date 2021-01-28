@@ -19,10 +19,6 @@ public enum LogEntryType {
         return value;
     }
 
-    public String getType() {
-        return type;
-    }
-
     public static LogEntryType findByValue(int value) {
         for (LogEntryType logEntryType : LogEntryType.values()) {
             if (logEntryType.getValue() == value) {
@@ -30,16 +26,6 @@ public enum LogEntryType {
             }
         }
         String message = String.format("No LogEntryType with value: %s.", value);
-        throw new RuntimeException(message);
-    }
-
-    public static LogEntryType findByType(String type) {
-        for (LogEntryType logEntryType : LogEntryType.values()) {
-            if (logEntryType.getType().equalsIgnoreCase(type)) {
-                return logEntryType;
-            }
-        }
-        String message = String.format("No LogEntryType with type: %s.", type);
         throw new RuntimeException(message);
     }
 }
